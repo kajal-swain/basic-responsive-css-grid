@@ -1,0 +1,124 @@
+
+.parent{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.item{
+    background-color: rgb(228, 228, 228);
+    padding: 20px;
+    font-size: 0.77rem;
+    
+    line-height: 1.7;
+}
+
+.item:nth-child(1){
+    font-size: 1.1rem;
+    grid-row: span 2;
+    display: grid;
+    align-content: center;
+}
+.item p{
+    margin: 0;
+}
+.example-banner{
+    max-width: 900px;
+    height: 300px;
+    background-color: rgb(222, 222, 255);
+    margin: 0 auto 20px auto;
+    display: grid;
+}
+.center-me{
+    color: rgb(113, 113, 175);
+    font-size: 3rem;
+    margin: auto;
+
+}
+.full-width-example{
+    background-color: rgb(255, 211, 130);
+    color: rgb(112, 86, 38);
+    line-height: 1.7;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: minmax(auto,900px);
+    justify-content: center;
+}
+.photo-example{
+    max-width: 700px;
+    margin: 20px auto;
+    display: grid;
+
+}
+.photo-example img{
+    width: 100%;
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+}
+.overlay-text{
+    background-color: rgba(0, 0, 0, 0.308);
+    color: #fff;
+    padding: 20px;
+    font-size: 0.85;
+    line-height: 1.7;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: end;
+    
+}
+.overlay-text p{
+    margin: 0;
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas: 
+    "header header"
+    "s main"
+    "s footer";
+}
+.header{
+background-color: rgb(113, 113, 175);
+color: #fff;
+padding: 20px;
+grid-area: s;
+grid-area: header;
+
+}
+.main{
+    grid-area: main;
+    padding: 20px;
+    line-height: 1.7;
+}
+.sidebar{
+    grid-area: s;
+    background-color: #ddd;
+    font-size: 0.8rem;
+    color: #999;
+    padding: 20px;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(77, 77, 77);
+    color: #fff;
+    padding: 15px;
+    align-self: end;
+}
+.responsive-example{
+    max-width: 1100px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.responsive-item{
+    background-color: rgb(204, 247, 230);
+    padding: 20px;
+    color: rgb(90, 145, 123);
+    font-size: 0.77rem;
+    line-height: 1.7;
+    overflow: auto;
+}
+
